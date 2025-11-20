@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AJ Studioos | Wedding Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/model.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-shell">
+      <nav class="nav">
+        <div class="brand">AJ Studioos</div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Book Your Wedding Story
+          </button>
+        </div>
+        <div class="nav-toggle" id="navToggle">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-tagline">Capturing timeless moments of love</h1>
+      <button class="hero-btn" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+        Explore Our Portfolio
+      </button>
+      <p class="hero-caption">
+        Let us tell your unique love story through beautiful, emotive photography that you’ll cherish forever.
+      </p>
+    </div>
+    <div class="hero-socials">
+      <a href="#">IG</a>
+      <a href="#">FB</a>
+      <a href="#">WA</a>
+    </div>
+  </section>
+
+  <section class="portfolio" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Our Portfolio</div>
+        <h2 class="section-title">Wedding Stories</h2>
+        <p class="section-subtitle">
+          Explore our curated collection of wedding photography, showcasing the beauty and emotion of each special day.
+        </p>
+      </div>
+
+      <div style="text-align:center;margin-bottom:1.5rem;">
+        <div class="portfolio-tabs">
+          <div class="portfolio-tab active">Pre-wedding</div>
+          <div class="portfolio-tab">Ceremonies</div>
+          <div class="portfolio-tab">Reception</div>
+          <div class="portfolio-tab">Candid Moments</div>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQra_DBuOoY9_GbJczE2WUrvjvO5CY0Fg1LeE3emYbQzmjUTyGeSnF6WrfPM8vnvGyIRWo&usqp=CAU"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="https://cdn0.weddingwire.in/article/7813/original/1280/jpg/63187-marriage-images-focuz-studios-christian-marriage-images.jpeg"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="https://www.jaihindhphotography.com/wp-content/uploads/2023/10/Best-couple-portrait-photographers-1-600x750.jpg"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AN3IQ9LwH45dPPbCZMSyhBU_ox9bxG3RVs1gbN26kAstjMF0n44KZiyQZW2wUjy80_k&usqp=CAU"
+            alt="">
+        </div>
+        <div class="portfolio-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvSbdaqouAD4SH8CRImcMiP3AbKozkpclXg&s"
+            alt="">
+        </div>
+      </div>
+
+      <div class="portfolio-cta">
+        <button>Explore Full Wedding Stories</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Our Story</div>
+        <h2 class="section-title">Wedding by AJ Studioos</h2>
+        <p class="section-subtitle">
+          Get in touch and let’s chat more about telling your love story.
+        </p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text">
+          <p>
+            AJ Studioos was born from a love for honest, heartfelt wedding stories. We believe every glance, every
+            touch and every smile deserves to be remembered the way it truly felt.
+          </p>
+          <p>
+            With years of experience in the wedding photography industry, our team blends documentary-style storytelling
+            with
+            timeless portraits, creating images that couples cherish for a lifetime.
+          </p>
+        </div>
+
+        <div class="founder-card">
+          <div class="founder-photo">
+            <img src="/cam shooter.png" alt="">
+          </div>
+          <div class="founder-name">ARVIN</div>
+          <div class="founder-role">Founder & Lead Photographer</div>
+          <p class="about-text" style="font-size:0.85rem;">
+            A passionate visual storyteller with a keen eye for capturing the essence of love and celebration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intimate" id="services">
+    <div class="container">
+      <div class="intimate-heading">
+        <h2>INTIMATE WEDDING</h2>
+        <p>
+          Capturing the quiet magic of close-knit celebrations, where every glance and every smile tells a deeply
+          personal story. Our lens focuses on the heartfelt moments that make your small wedding truly unforgettable.
+        </p>
+      </div>
+
+      <div class="intimate-subtitle">Romantic & Emotional</div>
+
+      <div class="intimate-layout">
+        <div class="intimate-text">
+          Love shines brightest in the little moments. We capture the tender smiles, gentle embraces, and emotional
+          glances that make intimate weddings so deeply meaningful. Every photo tells your unique love story — quietly,
+          beautifully, truly.
+        </div>
+
+        <div class="couple-cards">
+          <div class="couple-card">
+            <div class="couple-thumb">
+              <img src="https://camrinfilms.com/photos/Nivitha%20&%20Vinu%20(22).jpg" alt="">
+            </div>
+            <div>
+              <div class="couple-name">Vasanth &amp; Nivedha</div>
+              <div class="couple-location">Location: Chennai</div>
+            </div>
+          </div>
+          <div class="couple-card">
+            <div class="couple-thumb">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8WvGb_1M9_-Q-GxPLJ_ym2DqgPw98P8XFNjpPK4XvhqNcSoz2YgzLGGCIq1_vENKzZ8&usqp=CAU"
+                alt="">
+            </div>
+            <div>
+              <div class="couple-name">Surya &amp; Levina</div>
+              <div class="couple-location">Location: Bangalore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intimate-gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFAU4WwzuXXAHk7HrjAJs2RO_zMnVCbbxyQ&s" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8UhxnTGRWa1NH-8ykOda4NXEHg45kWj_fg&s" alt="">
+        <img src="https://fionawalsh.co.uk/wp-content/uploads/2019/07/creative-wedding-ideas.jpg" alt="">
+        <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-wrap" id="contact">
+    <div class="contact-hero">
+      <div class="contact-inner">
+        <div style="grid-column:1 / -1;">
+          <div class="contact-headline">
+            <h2>Get in Touch</h2>
+            <p>
+              We’d love to hear from you and discuss how we can capture your special moments. Fill out the form below,
+              or reach out via WhatsApp, email or phone.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label>Event Date</label>
+              <input type="date">
+            </div>
+            <div class="form-group">
+              <label>Event Type</label>
+              <select>
+                <option value="">Select type</option>
+                <option>Wedding</option>
+                <option>Engagement</option>
+                <option>Reception</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Event Location</label>
+              <input type="text" placeholder="City / venue">
+            </div>
+          </div>
+          <div class="form-group" style="margin-top:0.9rem;">
+            <label>Message</label>
+            <textarea placeholder="Tell us more about your plans..."></textarea>
+          </div>
+          <button class="submit-btn">Submit</button>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="contact-info-item">
+            <span class="contact-info-label">WhatsApp</span>
+            <span class="contact-info-text">Chat with us instantly</span>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-label">Email</span>
+            <span class="contact-info-text">arvinsesu2003@gmail.com</span>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="contact-info-label">Phone</span>
+            <span class="contact-info-text">+91-76959-12668</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-section">
+      <div class="container">
+        <div class="map-title">Visit Our Studio</div>
+      </div>
+      <div class="map-shell">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4766842195215!2d77.994!3d11.004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAwJzE0LjQiTiA3N8KwNTknMzguNCJF!5e0!3m2!1sen!2sin!4v1700000000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div style="opacity:0.9;"> AJ Studioos Wedding Photography</div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Whatsapp</a>
+      </div>
+      <div style="opacity:0.8;">© <span id="year"></span> AJ Studioos. All rights reserved.</div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
